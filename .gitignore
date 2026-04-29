@@ -1,0 +1,13 @@
+# Heavy video sources — not referenced by the case study
+assets/*.mp4
+assets/*.mov
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Memory dir (local agent state)
+memory/

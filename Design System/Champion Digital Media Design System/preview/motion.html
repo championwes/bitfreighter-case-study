@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Motion Tokens</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background:var(--bg-1); font-family:var(--font-body); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+  .cell { border:var(--border-hairline); padding:12px; }
+  .name { font-size:10px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; color:var(--fg-1); }
+  .val { font-size:11px; color:var(--fg-3); margin-top:6px; }
+  .desc { font-size:11px; color:var(--fg-2); margin-top:8px; line-height:1.4; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="name">Ease default</div><div class="val">cubic-bezier(.2,.8,.2,1)</div><div class="desc">All UI transitions. Confident, measured.</div></div>
+    <div class="cell"><div class="name">Ease enter</div><div class="val">cubic-bezier(.16,1,.3,1)</div><div class="desc">Reveals + entrances.</div></div>
+    <div class="cell"><div class="name">Fast · 150ms</div><div class="val">--duration-fast</div><div class="desc">Hover, focus, micro-states.</div></div>
+    <div class="cell"><div class="name">Medium · 400ms</div><div class="val">--duration-medium</div><div class="desc">Section reveals.</div></div>
+    <div class="cell" style="grid-column:1 / -1; background:var(--bg-2);"><div class="name">Forbidden</div><div class="desc" style="color:var(--fg-1);">No spring/bounce. No parallax. No infinite loops in frame. Hover ≤ 300ms.</div></div>
+  </div>
+</body></html>

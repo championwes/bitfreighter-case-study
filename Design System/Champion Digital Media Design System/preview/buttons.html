@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:var(--bg-1); display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
+  .btn { font-family:var(--font-body); font-weight:600; font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:14px 22px; border:1.5px solid var(--color-dark); cursor:pointer; transition:all 200ms var(--ease-default); }
+  .primary { background:var(--color-yellow); color:var(--color-dark); border-color:var(--color-yellow); }
+  .primary:hover { transform:scale(1.02); }
+  .secondary { background:transparent; color:var(--color-dark); }
+  .secondary:hover { background:var(--color-dark); color:var(--color-pale); }
+  .tertiary { background:transparent; color:var(--color-dark); border:0; padding:8px 0; border-bottom:1px solid var(--color-dark); }
+  .tertiary:hover { opacity:.6; }
+  .row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .meta { font-family:var(--font-body); font-size:9px; letter-spacing:.08em; text-transform:uppercase; color:var(--fg-3); }
+</style></head>
+<body>
+  <div class="row">
+    <button class="btn primary">LET'S TALK</button>
+    <span class="meta">PRIMARY · YELLOW · ONE PER SECTION</span>
+  </div>
+  <div class="row">
+    <button class="btn secondary">SEE THE WORK</button>
+    <span class="meta">SECONDARY · OUTLINE</span>
+  </div>
+  <div class="row">
+    <button class="btn tertiary">read more →</button>
+    <span class="meta">TERTIARY · INLINE LINK</span>
+  </div>
+</body></html>

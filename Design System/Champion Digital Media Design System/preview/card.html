@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Card Pattern</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:18px; background:var(--bg-1); }
+  .card { border:var(--border-hairline); background:var(--bg-1); display:flex; flex-direction:column; }
+  .img { aspect-ratio: 16 / 9; background:linear-gradient(135deg, #1F81A5 0%, #062D51 60%, #2A2A2A 100%); position:relative; }
+  .img::after { content:""; position:absolute; inset:0; background:rgba(20,20,20,.18); }
+  .body { padding:14px 16px 18px; }
+  .eyebrow { font-family:var(--font-body); font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--fg-3); }
+  .title { font-family:var(--font-display); font-style:italic; font-size:24px; text-transform:uppercase; line-height:1.05; margin:8px 0 6px; color:var(--fg-1); }
+  .copy { font-family:var(--font-body); font-size:12px; line-height:1.55; color:var(--fg-2); margin:0; max-width:none; }
+</style></head>
+<body>
+  <div class="card">
+    <div class="img"></div>
+    <div class="body">
+      <div class="eyebrow">CASE STUDY · 2024</div>
+      <div class="title">PATIENT IN A FAST MACHINE</div>
+      <p class="copy">A brand identity for an aviation startup that wanted to feel composed, not loud.</p>
+    </div>
+  </div>
+</body></html>

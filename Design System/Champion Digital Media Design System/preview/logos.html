@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Logos</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:var(--bg-1); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+  .tile { background:var(--bg-1); border:var(--border-hairline); padding:18px; display:flex; align-items:center; justify-content:center; min-height:90px; }
+  .tile.dark { background:var(--bg-inv); }
+  .tile img { max-width:100%; height:auto; display:block; }
+  .tile.symbol img { width:48px; height:48px; }
+  .tile.lockup img { height:36px; width:auto; }
+  .meta { font-family:var(--font-body); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--fg-3); margin-top:8px; }
+</style></head>
+<body>
+  <div class="grid">
+    <div>
+      <div class="tile symbol"><img src="../assets/logos/cdm-symbol.svg" alt=""></div>
+      <div class="meta">SYMBOL · ON PALE</div>
+    </div>
+    <div>
+      <div class="tile dark symbol"><img src="../assets/logos/cdm-symbol.svg" alt="" style="filter:invert(95%) sepia(8%) saturate(335%) hue-rotate(8deg) brightness(98%);"></div>
+      <div class="meta">SYMBOL · ON ANCHOR</div>
+    </div>
+    <div style="grid-column:1 / -1;">
+      <div class="tile lockup"><img src="../assets/logos/cdm-symbol-champion.svg" alt=""></div>
+      <div class="meta">ICON + CHAMPION WORDMARK</div>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Primary Colors</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background:var(--bg-1); }
+  .row { display:grid; grid-template-columns: repeat(5, 1fr); gap:10px; }
+  .sw { aspect-ratio: 1 / 1; border:var(--border-hairline); position:relative; display:flex; flex-direction:column; justify-content:flex-end; padding:10px; }
+  .sw .name { font-family:var(--font-body); font-size:9px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+  .sw .hex { font-family:var(--font-body); font-size:9px; opacity:.7; margin-top:2px; }
+  .pale { background:#F7F3E9; color:#141414; }
+  .anchor { background:#141414; color:#F7F3E9; border-color:transparent; }
+  .yellow { background:#FF9900; color:#141414; }
+  .highlight { background:#F9AC24; color:#141414; }
+  .white { background:#FFFFFF; color:#141414; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="sw pale"><div class="name">Pale</div><div class="hex">#F7F3E9</div></div>
+    <div class="sw anchor"><div class="name">Anchor</div><div class="hex">#141414</div></div>
+    <div class="sw yellow"><div class="name">Yellow</div><div class="hex">#FF9900</div></div>
+    <div class="sw highlight"><div class="name">Highlight</div><div class="hex">#F9AC24</div></div>
+    <div class="sw white"><div class="name">White</div><div class="hex">#FFFFFF</div></div>
+  </div>
+</body></html>

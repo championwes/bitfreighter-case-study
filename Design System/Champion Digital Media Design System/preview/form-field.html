@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Form Field</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:var(--bg-1); display:flex; flex-direction:column; gap:18px; }
+  .field { display:flex; flex-direction:column; gap:6px; }
+  label { font-family:var(--font-body); font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--fg-1); }
+  input { font-family:var(--font-body); font-size:14px; border:0; border-bottom:1.5px solid var(--color-dark); padding:8px 0; background:transparent; color:var(--fg-1); outline:none; }
+  input:focus { border-bottom-color:var(--color-yellow); }
+  input::placeholder { color:var(--fg-3); }
+</style></head>
+<body>
+  <div class="field"><label>Name</label><input placeholder="Your name"></div>
+  <div class="field"><label>Email</label><input value="hello@studio.com"></div>
+  <div class="field"><label>Project (focused)</label><input value="brand identity, web" autofocus></div>
+</body></html>

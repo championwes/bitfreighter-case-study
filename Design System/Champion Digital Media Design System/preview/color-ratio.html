@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Usage Ratio</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background:var(--bg-1); font-family:var(--font-body); }
+  .bar { display:flex; height:36px; border:var(--border-hairline); }
+  .seg { display:flex; align-items:center; justify-content:center; font-size:9px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; }
+  .pale { background:#F7F3E9; color:#141414; flex:65; }
+  .anchor { background:#141414; color:#F7F3E9; flex:22; }
+  .yellow { background:#FF9900; color:#141414; flex:8; }
+  .high { background:#F9AC24; color:#141414; flex:5; }
+  .legend { display:flex; gap:14px; margin-top:14px; flex-wrap:wrap; font-size:10px; letter-spacing:.06em; text-transform:uppercase; }
+  .lk { display:flex; align-items:center; gap:6px; }
+  .dot { width:10px; height:10px; }
+  .note { font-size:10px; color:var(--fg-3); margin-top:14px; line-height:1.5; }
+</style></head>
+<body>
+  <div class="bar">
+    <div class="seg pale">Pale 65</div>
+    <div class="seg anchor">Anchor 22</div>
+    <div class="seg yellow">Yellow 8</div>
+    <div class="seg high">5</div>
+  </div>
+  <div class="legend">
+    <div class="lk"><div class="dot" style="background:#F7F3E9;border:1px solid #ddd"></div>Calm ground</div>
+    <div class="lk"><div class="dot" style="background:#141414"></div>Anchor (type, lines)</div>
+    <div class="lk"><div class="dot" style="background:#FF9900"></div>Primary energy</div>
+    <div class="lk"><div class="dot" style="background:#F9AC24"></div>Highlight</div>
+  </div>
+  <p class="note">The yellow rule: one focal element per section, never more. The hand-drawn oval counts as the yellow moment.</p>
+</body></html>

@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Semantic Colors</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background:var(--bg-1); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+  .row { display:flex; align-items:center; gap:12px; padding:8px 12px; border:var(--border-hairline); }
+  .chip { width:28px; height:28px; flex:0 0 auto; }
+  .meta { font-family:var(--font-body); font-size:10px; letter-spacing:.06em; text-transform:uppercase; }
+  .name { font-weight:600; color:var(--fg-1); }
+  .hex { color:var(--fg-3); margin-top:2px; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="row"><div class="chip" style="background:#141414"></div><div class="meta"><div class="name">fg-1 / Anchor</div><div class="hex">#141414 · type, lines</div></div></div>
+    <div class="row"><div class="chip" style="background:#2A2A2A"></div><div class="meta"><div class="name">fg-2 / Ink</div><div class="hex">#2A2A2A · body copy</div></div></div>
+    <div class="row"><div class="chip" style="background:#7A7670"></div><div class="meta"><div class="name">fg-3 / Muted</div><div class="hex">#7A7670 · meta, captions</div></div></div>
+    <div class="row"><div class="chip" style="background:#F7F3E9;border:1px solid rgba(0,0,0,.1)"></div><div class="meta"><div class="name">bg-1 / Pale</div><div class="hex">#F7F3E9 · default ground</div></div></div>
+    <div class="row"><div class="chip" style="background:#EFE8D6;border:1px solid rgba(0,0,0,.1)"></div><div class="meta"><div class="name">bg-2 / Pale Warm</div><div class="hex">#EFE8D6 · second tone</div></div></div>
+    <div class="row"><div class="chip" style="background:rgba(20,20,20,.12)"></div><div class="meta"><div class="name">line</div><div class="hex">rgba(20,20,20,.12) · hairline</div></div></div>
+  </div>
+</body></html>
