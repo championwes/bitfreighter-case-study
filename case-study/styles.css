@@ -458,6 +458,21 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
   line-height: 1;
 }
 
+/* ───── In-situ row (4-up campaign graphics) ───── */
+.in-situ {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+.in-situ img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  background: #1a1a1a;
+}
+
 /* ───── Wide media (full-bleed within section) ───── */
 .wide-media {
   margin: var(--space-5) 0;
