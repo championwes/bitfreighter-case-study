@@ -2,6 +2,10 @@
 assets/*.mp4
 assets/*.mov
 
+# Whitelist the two videos embedded in the case study
+!assets/Bitfreighter_BrandVideo_V3.mp4
+!assets/Old Brand Video.mp4
+
 # macOS
 .DS_Store
 
@@ -11,3 +15,4 @@ assets/*.mov
 
 # Memory dir (local agent state)
 memory/
+.claude/
