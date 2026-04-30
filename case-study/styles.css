@@ -120,8 +120,9 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
   min-height: 720px;
 }
 .hero__media img {
-  width: 100%;
+  width: auto;
   height: 100%;
+  max-width: none;
   object-fit: contain;
   object-position: center bottom;
 }
