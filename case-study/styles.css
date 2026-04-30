@@ -81,7 +81,7 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
   align-items: stretch;
   padding: var(--space-5) 80px 0;
   position: relative;
-  min-height: 720px;
+  min-height: 600px;
 }
 .hero__copy {
   display: flex;
@@ -117,14 +117,12 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 720px;
+  min-height: 0;
 }
 .hero__media img {
-  width: auto;
-  height: 100%;
-  max-width: none;
-  object-fit: contain;
-  object-position: center bottom;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .hero__media-caption { display: none; }
 
