@@ -381,17 +381,37 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
 .circled { color: var(--fg-1); }
 .surface-dark .circled { color: var(--fg-on-inv); }
 
-/* ───── Hand-drawn flourishes ───── */
-.brush-divider {
-  height: 36px;
-  background-image: url("../Design System/Champion Digital Media Design System/assets/brushes/brush-03.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  opacity: 0.85;
-  margin: var(--space-5) 0;
+/* ───── Reiterated results grid (Campaign One restatement) ───── */
+.results-restate {
+  margin-top: var(--space-6);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  gap: 0;
+  border-top: 2px solid var(--color-yellow);
+  border-bottom: var(--border-hairline);
 }
-.surface-dark .brush-divider { filter: invert(1) brightness(2); opacity: 0.5; }
+.results-restate__num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 3.25rem;
+  line-height: 1;
+  color: var(--fg-1);
+  padding: var(--space-3) var(--space-2) var(--space-1);
+  border-right: var(--border-hairline);
+}
+.results-restate__label {
+  font-family: var(--font-body);
+  font-size: var(--type-micro);
+  letter-spacing: var(--track-caps-label);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  padding: 0 var(--space-2) var(--space-3);
+  border-right: var(--border-hairline);
+}
+.results-restate > :nth-child(11),
+.results-restate > :nth-child(12) { border-right: none; }
 
 /* ───── Inline marker (tiny fact pill) ───── */
 .fact-pill {
