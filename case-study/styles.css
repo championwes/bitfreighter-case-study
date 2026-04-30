@@ -98,9 +98,11 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
   margin-bottom: var(--space-4);
 }
 .hero h1 {
-  font-size: 8.25rem;
-  line-height: 0.94;
+  font-size: 4.5rem;
+  line-height: 1.0;
   margin-bottom: var(--space-4);
+  text-wrap: balance;
+  max-width: 16ch;
 }
 .hero__lead {
   font-size: var(--type-body-lg);
